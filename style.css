@@ -1,0 +1,76 @@
+/* write your code here */
+
+
+.container {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('image/pngtree-leaves-background-leafleafleaves-backgrounddont-worry-image_58710.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1 {
+    margin: 0 0 20px 0;
+    color: rgb(24, 21, 63);
+    font-family: "Mulish", sans-serif;
+    letter-spacing: 2px;
+    font-size: 60px;
+  }
+
+  .outer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px 50px 15px 15px;
+  }
+  .inner {
+    width: 300px;
+    background-color: rgb(182, 181, 180);
+    border-radius: 2px;
+    margin: 0 5px;
+    align-items: center;
+    
+  }
+  
+  .content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 5px;
+  }
+  .overlay {
+    transition: .5s ease;
+    opacity: 0;
+    top: 67.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+  }
+  #text {
+    background-color: whitesmoke;
+    color: rgb(69, 88, 199);
+    font-size: 25px;
+    
+  }
+
+.inner :hover .image {
+    opacity: 0.3;
+  }
+.inner :hover .overlay{
+    opacity: 0.5;
+}
